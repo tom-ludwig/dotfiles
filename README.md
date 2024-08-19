@@ -10,7 +10,7 @@
 
 Checkout out the repositiory in your `$HOME` directory.
 ```
-$ git clone git@github.com/dreamsofautonomy/dotfiles.git
+$ git clone https://github.com/activcoding/dotfiles.git
 $ cd dotfiles
 ```
 
