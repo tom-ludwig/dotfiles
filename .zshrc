@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
+plugins=( git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -136,3 +136,5 @@ export PATH="$PATH:/Users/tommyludwig/.local/bin" # Added by Docker Labs Debug T
 export EDITOR=nvim
 
 source <(fzf --zsh)
+
+alias cat=bat
