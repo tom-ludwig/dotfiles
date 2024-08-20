@@ -138,3 +138,5 @@ export EDITOR=nvim
 source <(fzf --zsh)
 
 alias cat=bat
+
+neofetch
