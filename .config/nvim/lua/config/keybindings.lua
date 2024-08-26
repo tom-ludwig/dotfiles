@@ -7,6 +7,8 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
+-- replaces selected text with the unnamed register’s content without affecting the clipboard
+vim.keymap.set('x', '<leader>p', [["+y]])
 -- vim.diagnostic.show()
 --[[ Toggle Inline Warning and Error Messages
 local diag_status = 1 -- 1 is show; 0 is hide
