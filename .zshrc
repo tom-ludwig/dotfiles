@@ -123,6 +123,10 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # ---- The Fuck ----
 # thefuck alias
 eval $(thefuck --alias)
+
+# Eza (a better ls)
+alias ls="eza --icons=always"
+
 export PATH="$PATH:/Users/tommyludwig/.local/bin" # Added by Docker Labs Debug Tools"
 
 # Export preferred editor
