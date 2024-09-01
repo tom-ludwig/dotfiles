@@ -11,6 +11,18 @@ return {
     local mason_lspconfig = require("mason-lspconfig")
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
+    lspconfig.clangd.setup({})
+    lspconfig.rust_analyzer.setup({})
+    lspconfig.sourcekit.setup({
+      capabilities = {
+        workspace = {
+          didChangeWatchedFiles = {
+            dynamicRegistration = true,
+          },
+        },
+      },
+    })
+
     local keymap = vim.keymap
 
     vim.api.nvim_create_autocmd("LspAttach", {
