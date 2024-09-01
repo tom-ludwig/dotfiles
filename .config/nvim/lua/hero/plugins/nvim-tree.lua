@@ -10,6 +10,7 @@ return {
 
     nvimtree.setup({
       view = {
+        side = "right",
         width = 35,
         relativenumber = true,
       },
@@ -41,5 +42,15 @@ return {
     keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>")
     keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>")
     keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>")
+
+    -- Keybinding to jump directly to the NvimTree window
+    keymap.set("n", "<leader>ej", function()
+      local view = require("nvim-tree.view")
+      if view.is_visible() then
+        view.focus()
+      else
+        vim.cmd("NvimTreeToggle")
+      end
+    end, { noremap = true, silent = true })
   end,
 }
