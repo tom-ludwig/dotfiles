@@ -1,5 +1,7 @@
-plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting)
-
+# zsh-syntax-highlighting: https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# zsh-autosuggestions: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   #eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
