@@ -44,6 +44,7 @@ return {
 
       -- sources for autocompletion
       sources = cmp.config.sources({
+        { name = "nvim_lsp" },
         { name = "luasnip" }, -- Snippets
         { name = "buffer" }, -- Text within current buffer
         { name = "path" }, -- File system paths
@@ -55,6 +56,10 @@ return {
           maxwidth = 50,
           ellipsis_char = "...",
         }),
+      },
+      window = {
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered(),
       },
     })
   end,
