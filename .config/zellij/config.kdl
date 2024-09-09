@@ -230,6 +230,12 @@ default_shell "zsh"
 //
 // pane_frames true
 
+ui {
+  pane_frames {
+    rounded_corners true
+  }
+}
+
 // Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
 // Options:
 //   - true (default)
