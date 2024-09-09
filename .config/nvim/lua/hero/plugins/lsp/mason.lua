@@ -27,7 +27,6 @@ return {
         "rust_analyzer",
         "gopls",
         "golangci_lint_ls",
-        "tsserver", -- JavaScript
         "markdown_oxide",
         "jsonls",
         "bashls",
