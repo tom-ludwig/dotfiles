@@ -4,9 +4,18 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-  #eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
-  #eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/amro.omp.json)"
-  eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/catppuccin.omp.json)"
+    # Define an array of themes
+    # 1: WIP; 2: Minimal; 3: Full
+    themes=("zen.toml" "amro.cmp.json" "catppuccin.omp.json")
+
+    # IMPORTANT: ZSH first index is 1 not 0!
+    default_theme="${themes[3]}"
+
+    # Set the path to the selected theme
+    theme_path="$HOME/.config/ohmyposh/$default_theme"
+
+    # Initialize Oh My Posh with the selected theme
+    eval "$(oh-my-posh init zsh --config $theme_path)"
 fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
