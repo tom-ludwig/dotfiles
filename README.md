@@ -47,3 +47,11 @@ Aliases are defined in /aliases/aliases
 - grs: `git remote show`
 - glo: `git log --pretty="oneline"`
 - glol: `git log --graph --online --decorate`
+
+## TODOs
+
+- `nvim-treesittter/nvim-treesittter-textobjects`
+- `lualine`: Fix seccond neovim line showing
+- `substitue` `surround`
+- `folke/todo-comments.nvim`
+- `Diffview.nvim`
