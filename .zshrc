@@ -9,7 +9,7 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
     themes=("zen.toml" "amro.cmp.json" "catppuccin.omp.json")
 
     # IMPORTANT: ZSH first index is 1 not 0!
-    default_theme="${themes[3]}"
+    default_theme="${themes[1]}"
 
     # Set the path to the selected theme
     theme_path="$HOME/.config/ohmyposh/$default_theme"
