@@ -1,6 +1,6 @@
 local colors = require("colors")
-local icons = require("icons")
-local settings = require("settings")
+-- local icons = require("icons")
+-- local settings = require("settings")
 local app_icons = require("helpers.app_icons")
 
 local spaces = {}
@@ -19,7 +19,7 @@ local spaceConfigs <const> = {
 	["1"] = { icon = "󰘦", name = "Coding" },
 	["2"] = { icon = "󰣇", name = "Terminal" },
 	["3"] = { icon = "󰖟", name = "Web" },
-	["4"] = { icon = "󰚢", name = "Communicaiton" },
+	["4"] = { icon = "󰊻", name = "Communicaiton" },
 	["5"] = { icon = "󱃾", name = "Dev Tools" },
 	["6"] = { icon = "󰕄", name = "Social Media" },
 	["7"] = { icon = "󰝚", name = "Music" },
