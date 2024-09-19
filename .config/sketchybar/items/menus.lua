@@ -32,7 +32,7 @@ local function createPlaceholders()
 
 	sbar.add("bracket", { "/" .. "menu" .. "\\..*/" }, {
 		background = {
-			color = colors.bg1,
+			color = colors.currentTheme.background,
 			padding_left = 8,
 			padding_right = 8,
 		},

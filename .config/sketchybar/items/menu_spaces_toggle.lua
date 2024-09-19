@@ -21,7 +21,7 @@ local function addToggle()
 		},
 		label = {
 			width = 0,
-			color = colors.bg1,
+			color = colors.currentTheme.background,
 			string = "Spaces",
 		},
 		background = {
@@ -40,7 +40,7 @@ local function addToggle()
 					color = { alpha = 1.0 },
 					border_color = { alpha = 1.0 },
 				},
-				icon = { color = colors.bg1 },
+				icon = { color = colors.currentTheme.background },
 				label = { width = "dynamic" },
 			})
 		end)
@@ -53,7 +53,7 @@ local function addToggle()
 					color = { alpha = 0.0 },
 					border_color = { alpha = 0.0 },
 				},
-				icon = { color = colors.white },
+				icon = { color = colors.currentTheme.text },
 				label = { width = 0 },
 			})
 		end)

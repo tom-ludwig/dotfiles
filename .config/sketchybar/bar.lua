@@ -12,7 +12,7 @@ local colors = require("colors")
 sbar.bar({
 	topmost = "window",
 	height = 36,
-	color = 0x00000000,
+	color = colors.dark_grey, -- TODO: Toggle Background color in the theme.
 	padding_right = 12,
 	padding_left = 12,
 	margin = 12,
