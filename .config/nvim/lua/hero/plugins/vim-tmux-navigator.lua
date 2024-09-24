@@ -1,4 +1,4 @@
 -- Tmux window motions
 return {
-  "christoomey/vim-tmux-navigator",
+    "christoomey/vim-tmux-navigator",
 }
