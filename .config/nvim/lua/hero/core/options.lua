@@ -22,9 +22,9 @@ opt.expandtab = true -- Expand tab to spaces
 opt.autoindent = true -- Copy indent from current line when starting new one
 opt.smartindent = true
 opt.smarttab = true
-opt.breakindent = true
 
 opt.wrap = true
+opt.breakindent = true
 
 -- Set encoding
 opt.encoding = "utf-8"
