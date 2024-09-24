@@ -2,6 +2,7 @@ vim.g.mapleader = " " -- Set leader to space
 
 local keymap = vim.keymap
 keymap.set("n", "<C-d>", "<C-d>zz", { noremap = true, silent = true })
+keymap.set("n", "<C-u>", "<C-u>zz", { noremap = true, silent = true })
 
 -- Clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
