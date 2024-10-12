@@ -20,6 +20,8 @@ return {
                         ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
                     },
                 },
+                -- layout_strategy = "flex", flex bugs if the window is 50% of the screen and just a bit to small to show all results
+                layout_strategy = "vertical", -- horizontal, vertical, flex
             },
         })
 
