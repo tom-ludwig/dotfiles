@@ -31,6 +31,8 @@ return {
                 "jsonls",
                 "bashls",
                 "yamlls",
+                "ts_ls",
+                "lemminx", -- XML language server
             },
         })
 

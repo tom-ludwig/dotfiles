@@ -61,6 +61,11 @@ return {
                 completion = cmp.config.window.bordered(),
                 documentation = cmp.config.window.bordered(),
             },
+            view = {
+                docs = {
+                    auto_open = false,
+                },
+            },
         })
     end,
 }
