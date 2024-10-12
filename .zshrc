@@ -61,6 +61,7 @@ alias glol='git log --graph --oneline --decorate'
 # | ALIASES |
 # +---------+
 
+alias cloc=loc
 #source $HOME/aliases/aliases
 
 neofetch
