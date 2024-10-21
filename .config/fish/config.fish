@@ -47,4 +47,7 @@ abbr .5 'cd ../../../../..'
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 abbr mkdir 'mkdir -p'
 
+# Add go path
+set -Ux fish_user_paths $fish_user_paths $HOME/go/bin
+
 neofetch
