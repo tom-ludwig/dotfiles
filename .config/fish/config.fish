@@ -1,3 +1,4 @@
+/opt/homebrew/bin/brew shellenv | source
 set -g fish_greeting
 
 if status is-interactive
