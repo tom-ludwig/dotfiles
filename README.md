@@ -1,4 +1,9 @@
-# Dotfiles
+## Screenshots
+MacOS:
+<img width="2560" alt="Screenshot 2024-12-30 at 6 43 34 PM" src="https://github.com/user-attachments/assets/28010ea6-50ae-4ec5-adf6-d84a564f332a" />
+*(aerospace, sketchybar, janky-borders, ghostty, tmux, neovim)*
+
+Linux:
 
 ## Requirements
 
@@ -19,39 +24,3 @@ Then use GNU stow to create symlinks.
 ```
 $ stow .
 ```
-
-## Customs
-
-### ZSH
-
-#### Aliases
-
-Aliases are defined in /aliases/aliases
-
-##### Git
-
-- gs: `git status`
-- ga: `git add`
-- gp: `git push`
-- gpo: `git push origin`
-- gtd: `git tag --delete`
-- gtdr: `git tag --delete origin`
-- gr: `git branch -r`
-- gplo: `git pull origin`
-- gb: `git branch `
-- gc: `git commit`
-- gd: `git diff`
-- gco: `git checkout `
-- gl: `git log`
-- gr: `git remote`
-- grs: `git remote show`
-- glo: `git log --pretty="oneline"`
-- glol: `git log --graph --online --decorate`
-
-## TODOs
-
-- `nvim-treesittter/nvim-treesittter-textobjects`
-- `lualine`: Fix seccond neovim line showing
-- `substitue` `surround`
-- `folke/todo-comments.nvim`
-- `Diffview.nvim`
