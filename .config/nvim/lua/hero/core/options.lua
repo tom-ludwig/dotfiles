@@ -11,9 +11,6 @@ local opt = vim.opt
 opt.number = true
 opt.relativenumber = true
 opt.cursorline = true
-opt.expandtab = true
-opt.shiftwidth = 4
-opt.tabstop = 4
 
 -- Tabs & indentations
 opt.tabstop = 4 -- 4 spaces for tabs
@@ -74,6 +71,12 @@ opt.splitkeep = "cursor"
 
 -- Disable mouse support
 opt.mouse = ""
+
+-- Set fold settings
+vim.o.foldcolumn = "1" -- '0' is not bad
+vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
 
 -- Define a custom command to reload init.lua
 vim.cmd([[command! ReloadLuaConfig source ~/.config/nvim/init.lua]])

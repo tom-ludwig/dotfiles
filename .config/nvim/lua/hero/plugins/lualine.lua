@@ -1,7 +1,7 @@
 -- Better Statusline
 return {
     "nvim-lualine/lualine.nvim",
-    -- enabled = true,
+    enabled = true,
     dependencies = {
         "nvim-tree/nvim-web-devicons",
         "catppuccin/nvim",
@@ -14,7 +14,7 @@ return {
             sections = {
                 lualine_a = { "mode" },
                 -- lualine_b = { "branch" },
-                lualine_b = { "" },
+                lualine_b = { "diagnostics" },
                 lualine_c = { "filename" },
                 lualine_x = { "", "", "filetype" },
                 lualine_y = { "progress" },

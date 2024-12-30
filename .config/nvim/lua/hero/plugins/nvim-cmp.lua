@@ -50,7 +50,6 @@ return {
                 { name = "path" }, -- File system paths
             }),
 
-            -- configure lspkind for vs-code like pictograms in completion menu
             formatting = {
                 format = lspkind.cmp_format({
                     maxwidth = 50,
