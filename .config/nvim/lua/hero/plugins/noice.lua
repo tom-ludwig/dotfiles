@@ -43,10 +43,6 @@ return {
                     row = 1,
                     col = "50%",
                 },
-                -- border = {
-                --     style = "none",
-                --     padding = { 2, 3 },
-                -- },
                 size = {
                     min_width = 60,
                     width = "auto",
@@ -75,11 +71,6 @@ return {
                     winhighlight = { NormalFloat = "NormalFloat", FloatBorder = "NoiceCmdlinePopupBorder" },
                 },
             },
-            -- hover = {
-            --     border = {
-            --         style = "rounded",
-            --     },
-            -- },
             confirm = {
                 border = {
                     style = "single",
@@ -111,46 +102,3 @@ return {
     { "<c-b>", function() if not require("noice.lsp").scroll(-4) then return "<c-b>" end end, silent = true, expr = true, desc = "Scroll backward", mode = {"i", "n", "s"}},
   },
 }
-
--- return {
---     "folke/noice.nvim",
---     event = "VeryLazy",
---     dependencies = {
---         "MunifTanjim/nui.nvim",
---         "rcarriga/nvim-notify",
---     },
---     setup = function()
---         require("noice").setup({
---             -- cmdline = {
---             --     enabled = true,
---             --     view = "cmline_popup", -- switch to "cmline" for classic cmdline
---             -- },
---             -- notify = {
---             --     enabled = true,
---             --     view = "notify",
---             -- },
---             -- message = {
---             --     enabled = true,
---             --     view = "message",
---             --     opts = {},
---             -- },
---             -- lsp = {
---             --     -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
---             --     override = {
---             --         ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
---             --         ["vim.lsp.util.stylize_markdown"] = true,
---             --         ["cmp.entry.get_documentation"] = true, -- requires hrsh7th/nvim-cmp
---             --     },
---             -- },
---             -- you can enable a preset for easier configuration
---
---             presets = {
---                 bottom_search = true, -- use a classic bottom cmdline for search
---                 command_palette = true, -- position the cmdline and popupmenu together
---                 long_message_to_split = true, -- long messages will be sent to a split
---                 inc_rename = false, -- enables an input dialog for inc-rename.nvim
---                 lsp_doc_border = true, -- add a border to hover docs and signature help
---             },
---         })
---     end,
--- }
