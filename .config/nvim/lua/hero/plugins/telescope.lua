@@ -22,6 +22,7 @@ return {
                 },
                 -- layout_strategy = "flex", flex bugs if the window is 50% of the screen and just a bit to small to show all results
                 layout_strategy = "vertical", -- horizontal, vertical, flex
+                file_ignore_patterns = { "node_modules", "vendor" },
             },
         })
 
