@@ -5,14 +5,16 @@ if status is-interactive
     starship init fish | source
 end
 
+set -x GPG_TTY (tty)
+
+set -x GOPATH (go env GOPATH)
+set -x PATH $PATH (go env GOPATH)/bin
+
 # +---------+
-# | General |
+# |  Alias  |
 # +---------+
 alias fuck='thefuck'
 
-# +---------+
-# |   GIT   |
-# +---------+
 alias gs='git status'
 alias ga='git add'
 alias gp='git push'
@@ -27,7 +29,7 @@ alias gd='git diff'
 alias gco='git checkout '
 alias gr='git remote'
 alias grs='git remote show'
-alias gl = 'git log --graph --pretty=format:"%C(yellow)%h%Creset ⬢ %C(cyan)%an%Creset ⏱ %Cgreen%ar%Creset%n%Cblue╰─ %s%Creset" --abbrev-commit'
+alias gl='git log --graph --pretty=format:"%C(yellow)%h%Creset ⬢ %C(cyan)%an%Creset ⏱ %Cgreen%ar%Creset%n%Cblue╰─ %s%Creset" --abbrev-commit'
 
 # List Directory
 alias ls="lsd"
@@ -36,6 +38,8 @@ alias la="ls -a"
 alias lla="ls -la"
 alias lt="ls --tree"
 
+# Terraform
+alias tf="terraform"
 # Handy change dir shortcuts
 abbr .. 'cd ..'
 abbr ... 'cd ../..'
