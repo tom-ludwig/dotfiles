@@ -27,7 +27,7 @@ alias gd='git diff'
 alias gco='git checkout '
 alias gr='git remote'
 alias grs='git remote show'
-alias gl = 'git log --graph --pretty=format:"%C(yellow)%h%Creset ⬢ %C(cyan)%an%Creset ⏱ %Cgreen%ar%Creset%n%Cblue╰─ %s%Creset" --abbrev-commit'
+alias gl='git log --graph --pretty=format:"%C(yellow)%h%Creset ⬢ %C(cyan)%an%Creset ⏱ %Cgreen%ar%Creset%n%Cblue╰─ %s%Creset" --abbrev-commit'
 
 # List Directory
 alias ls="lsd"
