@@ -1,7 +1,10 @@
 theme = catppuccin-mocha
 font-family = CaskaydiaCove Nerd Font Mono
 
-font-size = 13
+font-size = 14
+font-thicken = true 
+
+title = " "
 
 gtk-titlebar = true
 
@@ -9,12 +12,10 @@ shell-integration = fish
 command = /opt/homebrew/bin/fish --login --interactive
 
 cursor-style = bar
+cursor-invert-fg-bg = true
+minimum-contrast = 1.1
 
 background-opacity = 0.95
-
-font-thicken = true 
-
-title = " "
 
 macos-titlebar-style = hidden
 
@@ -22,7 +23,6 @@ mouse-hide-while-typing = true
 
 background-blur-radius = 10
 
-clipboard-write = ask
 clipboard-trim-trailing-spaces = true
 copy-on-select = true
 
