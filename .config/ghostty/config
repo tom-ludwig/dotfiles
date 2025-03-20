@@ -30,3 +30,18 @@ quit-after-last-window-closed = true
 # window-padding-x = 20
 # window-padding-y = 20
 # window-padding-balance = true
+
+#custom-shader = ghostty-shaders/glitchy.glsl
+#custom-shader = ghostty-shaders/in-game-crt.glsl
+
+# Old Computer
+#custom-shader = ghostty-shaders/in-game-crt.glsl
+#custom-shader = ghostty-shaders/bettercrt.glsl
+#custom-shader = ghostty-shaders/crt.glsl
+#custom-shader = ghostty-shaders/retro-terminal.glsl
+
+
+# water:
+#custom-shader = ghostty-shaders/drunkard.glsl
+#custom-shader = ghostty-shaders/water.glsl
+
