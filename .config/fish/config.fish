@@ -52,5 +52,7 @@ abbr mkdir 'mkdir -p'
 
 # Add go path
 set -Ux fish_user_paths $fish_user_paths $HOME/go/bin
+set -q KREW_ROOT; and set -gx PATH $PATH $KREW_ROOT/.krew/bin; or set -gx PATH $PATH $HOME/.krew/bin
 
-neofetch
+
+# neofetch
