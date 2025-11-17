@@ -40,6 +40,7 @@ alias lt="ls --tree"
 
 # Terraform
 alias tf="terraform"
+
 # Handy change dir shortcuts
 abbr .. 'cd ..'
 abbr ... 'cd ../..'
