@@ -7,21 +7,21 @@ return {
         { "folke/neodev.nvim", opts = {} },
     },
     config = function()
-        local lspconfig = require("lspconfig")
         local mason_lspconfig = require("mason-lspconfig")
         local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
-        lspconfig.clangd.setup({})
-        lspconfig.rust_analyzer.setup({})
-        lspconfig.sourcekit.setup({
-            capabilities = {
-                workspace = {
-                    didChangeWatchedFiles = {
-                        dynamicRegistration = true,
-                    },
-                },
-            },
-        })
+        -- TODO: Check if this is still needed
+        -- vim.lsp.config.clangd.setup({})
+        -- vim.lsp.config.rust_analyzer.setup({})
+        -- vim.lsp.config.sourcekit.setup({
+        --     capabilities = {
+        --         workspace = {
+        --             didChangeWatchedFiles = {
+        --                 dynamicRegistration = true,
+        --             },
+        --         },
+        --     },
+        -- })
 
         local keymap = vim.keymap
 
@@ -71,46 +71,19 @@ return {
             end,
         })
 
-        -- Used to enable auto-completion (assign to every lsp server config)
-        local capabilities = cmp_nvim_lsp.default_capabilities()
+        -- -- Used to enable auto-completion (assign to every lsp server config)
+        -- local capabilities = cmp_nvim_lsp.default_capabilities()
 
         -- Change the Diagnostic symbols in the sign column (gutter)
-        local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
-        for type, icon in pairs(signs) do
-            local hl = "DiagnosticSign" .. type
-            vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-        end
-
-        mason_lspconfig.setup_handlers({
-            -- Default handler for installed servers
-            function(server_name)
-                lspconfig[server_name].setup({
-                    capabilities = capabilities,
-                })
-            end,
-            ["graphql"] = function()
-                lspconfig["graphql"].setup({
-                    capabilities = capabilities,
-                    filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
-                })
-            end,
-            ["lua_ls"] = function()
-                -- Configure lua server (with special settings)
-                lspconfig["lua_ls"].setup({
-                    capabilities = capabilities,
-                    settings = {
-                        Lua = {
-                            -- Make the language server recognize 'vim' global
-                            diagnostics = {
-                                globals = { "vim" },
-                            },
-                            completion = {
-                                callSnippet = "Replace",
-                            },
-                        },
-                    },
-                })
-            end,
+        vim.diagnostic.config({
+            signs = {
+                text = {
+                    ERROR = "✘", -- 
+                    WARN = " ", -- 
+                    HINT = "󰠠", -- 󰠠
+                    INFO = "»", -- 
+                },
+            },
         })
     end,
 }
